@@ -7,10 +7,10 @@ namespace Challenges
         static void Main(string[] args)
         {
 
-            int[] firstArray = new int[2] { 2, 2 };
-            int[] secondArray = new int[3] { 1, 2, 3 };
-            int[] thirdArray = new int[3] { 4, 5, 6 };
-            int[] fourthArray = new int[3] { 1, 2, -2 };
+            //int[] firstArray = new int[2] { 2, 2 };
+            //int[] secondArray = new int[3] { 1, 2, 3 };
+            //int[] thirdArray = new int[3] { 4, 5, 6 };
+            //int[] fourthArray = new int[3] { 1, 2, -2 };
 
             Console.WriteLine("Hello World!");
 
@@ -18,17 +18,19 @@ namespace Challenges
 
             //LeapYearCalculator();
 
-            Console.WriteLine(string.Join(", ", firstArray));
-            PerfectSequence(firstArray);
+            //Console.WriteLine(string.Join(", ", firstArray));
+            //PerfectSequence(firstArray);
 
-            Console.WriteLine(string.Join(", ", secondArray));
-            PerfectSequence(secondArray);
+            //Console.WriteLine(string.Join(", ", secondArray));
+            //PerfectSequence(secondArray);
 
-            Console.WriteLine(string.Join(", ", thirdArray));
-            PerfectSequence(thirdArray);
+            //Console.WriteLine(string.Join(", ", thirdArray));
+            //PerfectSequence(thirdArray);
 
-            Console.WriteLine(string.Join(", ", fourthArray));
-            PerfectSequence(fourthArray);
+            //Console.WriteLine(string.Join(", ", fourthArray));
+            //PerfectSequence(fourthArray);
+
+            SumOfRows();
 
             Console.ReadLine();
         }
@@ -149,6 +151,15 @@ namespace Challenges
         }
 
         // Challenge 4
+
+        private static void SumOfRows()
+        {
+            Console.WriteLine("How many rows are in your matrix?");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many columns are in your matrix?");
+            int columns = int.Parse(Console.ReadLine());
+            Console.WriteLine("{0} {1}", rows, columns);
+        }
 
     }
 }
