@@ -9,6 +9,9 @@ namespace Challenges
             Console.WriteLine("Hello World!");
             //ArrayScoreFinder();
             LeapYearCalculator();
+            LeapYearCalculator();
+            LeapYearCalculator();
+            LeapYearCalculator();
             Console.ReadLine();
         }
 
@@ -51,8 +54,6 @@ namespace Challenges
         }
 
         // Challenge 2
-
-
         private static void LeapYearCalculator()
         {
             Console.WriteLine("Enter a year (ie. 1991).");

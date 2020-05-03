@@ -8,4 +8,8 @@ Create an array of 5 numbers based on user input.  Then ask the user for a numbe
 
 ![Challenge 1](images/DSAchallenge1.png)
 
+## Challenge 2 -- Leap Year Calculator
 
+When a user enters a year, calculate whether that year is a leap year or not.
+
+![Challenge 2](images/DSAchallenge2.png)
