@@ -158,7 +158,22 @@ namespace Challenges
             int rows = int.Parse(Console.ReadLine());
             Console.WriteLine("How many columns are in your matrix?");
             int columns = int.Parse(Console.ReadLine());
-            Console.WriteLine("{0} {1}", rows, columns);
+
+            int[,] myMatrix = new int[rows, columns];
+            System.Random randomNumber = new System.Random();
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    int newNumber = randomNumber.Next(1, 100);
+                    myMatrix[i, j] = newNumber;
+                }
+            }
+            foreach (int i in myMatrix)
+            {
+                Console.WriteLine("{0}", i);
+            }
         }
 
     }
