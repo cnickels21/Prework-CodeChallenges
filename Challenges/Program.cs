@@ -170,10 +170,21 @@ namespace Challenges
                     myMatrix[i, j] = newNumber;
                 }
             }
-            foreach (int i in myMatrix)
+
+            int[] outputArray = new int[rows];
+            int rowTotal = 0;
+
+            for (int m = 0; m < myMatrix.GetLength(0); m++)
             {
-                Console.WriteLine("{0}", i);
+                for (int n = 0; n < myMatrix.GetLength(1); n++)
+                {
+                    rowTotal += myMatrix[m, n];
+                    Console.Write(string.Format("{0} ", myMatrix[m, n]));
+                }
+                Console.Write(Environment.NewLine + Environment.NewLine);
+                outputArray[m] = rowTotal;
             }
+            Console.WriteLine(string.Join(",", outputArray));
         }
 
     }
