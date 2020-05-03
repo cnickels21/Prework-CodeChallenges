@@ -7,10 +7,10 @@ namespace Challenges
         static void Main(string[] args)
         {
 
-            int[] firstArray = new int[2] { 2, 2 };
-            int[] secondArray = new int[3] { 1, 2, 3 };
-            int[] thirdArray = new int[3] { 4, 5, 6 };
-            int[] fourthArray = new int[3] { 1, 2, -2 };
+            //int[] firstArray = new int[2] { 2, 2 };
+            //int[] secondArray = new int[3] { 1, 2, 3 };
+            //int[] thirdArray = new int[3] { 4, 5, 6 };
+            //int[] fourthArray = new int[3] { 1, 2, -2 };
 
             Console.WriteLine("Hello World!");
 
@@ -18,17 +18,20 @@ namespace Challenges
 
             //LeapYearCalculator();
 
-            Console.WriteLine(string.Join(", ", firstArray));
-            PerfectSequence(firstArray);
+            //Console.WriteLine(string.Join(", ", firstArray));
+            //PerfectSequence(firstArray);
 
-            Console.WriteLine(string.Join(", ", secondArray));
-            PerfectSequence(secondArray);
+            //Console.WriteLine(string.Join(", ", secondArray));
+            //PerfectSequence(secondArray);
 
-            Console.WriteLine(string.Join(", ", thirdArray));
-            PerfectSequence(thirdArray);
+            //Console.WriteLine(string.Join(", ", thirdArray));
+            //PerfectSequence(thirdArray);
 
-            Console.WriteLine(string.Join(", ", fourthArray));
-            PerfectSequence(fourthArray);
+            //Console.WriteLine(string.Join(", ", fourthArray));
+            //PerfectSequence(fourthArray);
+
+            SumOfRows();
+            SumOfRows();
 
             Console.ReadLine();
         }
@@ -149,6 +152,41 @@ namespace Challenges
         }
 
         // Challenge 4
+
+        private static void SumOfRows()
+        {
+            Console.WriteLine("How many rows are in your matrix?");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many columns are in your matrix?");
+            int columns = int.Parse(Console.ReadLine());
+
+            int[,] myMatrix = new int[rows, columns];
+            System.Random randomNumber = new System.Random();
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    int newNumber = randomNumber.Next(1, 100);
+                    myMatrix[i, j] = newNumber;
+                }
+            }
+
+            int[] outputArray = new int[rows];
+            int rowTotal = 0;
+
+            for (int m = 0; m < myMatrix.GetLength(0); m++)
+            {
+                for (int n = 0; n < myMatrix.GetLength(1); n++)
+                {
+                    rowTotal += myMatrix[m, n];
+                    Console.Write(string.Format("{0} ", myMatrix[m, n]));
+                }
+                Console.Write(Environment.NewLine + Environment.NewLine);
+                outputArray[m] = rowTotal;
+            }
+            Console.WriteLine(string.Join(",", outputArray));
+        }
 
     }
 }
