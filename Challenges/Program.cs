@@ -11,6 +11,7 @@ namespace Challenges
             Console.ReadLine();
         }
 
+        // Challenge 1
         private static void ArrayScoreFinder()
         {
             int[] userArray = new int[5];
@@ -19,6 +20,7 @@ namespace Challenges
                 Console.WriteLine("Enter a number between 1-10.");
                 userArray[i] = int.Parse(Console.ReadLine());
             }
+
             Console.WriteLine(string.Join(", ", userArray));
             Console.WriteLine("Select a number from the array.");
 
@@ -36,6 +38,8 @@ namespace Challenges
             Console.WriteLine(userAnswer * counter);
             
         }
+
+        // Challenge 2
 
     }
 }
