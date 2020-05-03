@@ -31,6 +31,7 @@ namespace Challenges
             //PerfectSequence(fourthArray);
 
             SumOfRows();
+            SumOfRows();
 
             Console.ReadLine();
         }
