@@ -6,12 +6,30 @@ namespace Challenges
     {
         static void Main(string[] args)
         {
+
+            int[] firstArray = new int[2] { 2, 2 };
+            int[] secondArray = new int[3] { 1, 2, 3 };
+            int[] thirdArray = new int[3] { 4, 5, 6 };
+            int[] fourthArray = new int[3] { 1, 2, -2 };
+
             Console.WriteLine("Hello World!");
+
             //ArrayScoreFinder();
-            LeapYearCalculator();
-            LeapYearCalculator();
-            LeapYearCalculator();
-            LeapYearCalculator();
+
+            //LeapYearCalculator();
+
+            Console.WriteLine(string.Join(", ", firstArray));
+            PerfectSequence(firstArray);
+
+            Console.WriteLine(string.Join(", ", secondArray));
+            PerfectSequence(secondArray);
+
+            Console.WriteLine(string.Join(", ", thirdArray));
+            PerfectSequence(thirdArray);
+
+            Console.WriteLine(string.Join(", ", fourthArray));
+            PerfectSequence(fourthArray);
+
             Console.ReadLine();
         }
 
@@ -84,6 +102,53 @@ namespace Challenges
             }
         }
 
+        // Challenge 3
+
+        private static void PerfectSequence(int[] array)
+        {
+            if (SumOfArray(array) == ProductOfArray(array))
+            {
+                Console.WriteLine("Yes");
+            }
+            else if (SumOfArray(array) != ProductOfArray(array))
+            {
+                Console.WriteLine("No");
+            }
+            else
+            {
+                foreach (var number in array)
+                {
+                    if (number < 0)
+                    {
+                        Console.WriteLine("No");
+                    }
+                }
+            }
+        }
+
+        private static int SumOfArray(int[] array)
+        {
+            int total = 0;
+
+            foreach (var number in array)
+            {
+                total += number;
+            }
+            return total;
+        }
+
+        private static int ProductOfArray(int[] array)
+        {
+            int total = 1;
+
+            foreach (var number in array)
+            {
+                total *= number;
+            }
+            return total;
+        }
+
+        // Challenge 4
 
     }
 }
