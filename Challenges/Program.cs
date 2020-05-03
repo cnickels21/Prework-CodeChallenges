@@ -7,7 +7,7 @@ namespace Challenges
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            ArrayScoreFinder();
+            //ArrayScoreFinder();
             LeapYearCalculator();
             Console.ReadLine();
         }
@@ -52,12 +52,37 @@ namespace Challenges
 
         // Challenge 2
 
+
         private static void LeapYearCalculator()
         {
             Console.WriteLine("Enter a year (ie. 1991).");
             int userYear = int.Parse(Console.ReadLine());
-            Console.WriteLine(userYear);
+
+            if (userYear % 4 == 0)
+            {
+                if (userYear % 100 == 0)
+                {
+                    if (userYear % 400 == 0)
+                    {
+                        Console.WriteLine("That is a leap year!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("That is not a leap year.");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("That is a leap year!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("That is not a leap year!");
+            }
         }
+
 
     }
 }
