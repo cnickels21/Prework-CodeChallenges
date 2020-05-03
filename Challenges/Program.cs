@@ -20,6 +20,21 @@ namespace Challenges
                 userArray[i] = int.Parse(Console.ReadLine());
             }
             Console.WriteLine(string.Join(", ", userArray));
+            Console.WriteLine("Select a number from the array.");
+
+            int userAnswer = int.Parse(Console.ReadLine());
+            int counter = 0;
+            
+            foreach(int number in userArray)
+            {
+                if(userAnswer == number)
+                {
+                    counter++;
+                }
+            }
+
+            Console.WriteLine(userAnswer * counter);
+            
         }
 
     }
