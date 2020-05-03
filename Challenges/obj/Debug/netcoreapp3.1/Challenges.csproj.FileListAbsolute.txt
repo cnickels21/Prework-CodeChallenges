@@ -1,0 +1,13 @@
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.exe
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.deps.json
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.runtimeconfig.json
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.runtimeconfig.dev.json
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.dll
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\bin\Debug\netcoreapp3.1\Challenges.pdb
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.csproj.CoreCompileInputs.cache
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.AssemblyInfoInputs.cache
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.AssemblyInfo.cs
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.dll
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.pdb
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.genruntimeconfig.cache
+C:\Users\c_nic\DeltaV\401\Prework-CodeChallenges\Challenges\obj\Debug\netcoreapp3.1\Challenges.csprojAssemblyReference.cache
