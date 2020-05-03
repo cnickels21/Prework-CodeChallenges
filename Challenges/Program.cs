@@ -8,6 +8,7 @@ namespace Challenges
         {
             Console.WriteLine("Hello World!");
             ArrayScoreFinder();
+            LeapYearCalculator();
             Console.ReadLine();
         }
 
@@ -18,7 +19,17 @@ namespace Challenges
             for (int i = 0; i < userArray.Length; i++)
             {
                 Console.WriteLine("Enter a number between 1-10.");
-                userArray[i] = int.Parse(Console.ReadLine());
+                int currentAnswer = int.Parse(Console.ReadLine());
+
+                if (currentAnswer > 10 || currentAnswer < 1)
+                {
+                    Console.WriteLine("That is not between 1-10. Try again.");
+                    i--;
+                }
+                else
+                {
+                    userArray[i] = currentAnswer;
+                }
             }
 
             Console.WriteLine(string.Join(", ", userArray));
@@ -26,20 +37,27 @@ namespace Challenges
 
             int userAnswer = int.Parse(Console.ReadLine());
             int counter = 0;
-            
-            foreach(int number in userArray)
+
+            foreach (int number in userArray)
             {
-                if(userAnswer == number)
+                if (userAnswer == number)
                 {
                     counter++;
                 }
             }
 
             Console.WriteLine(userAnswer * counter);
-            
+
         }
 
         // Challenge 2
+
+        private static void LeapYearCalculator()
+        {
+            Console.WriteLine("Enter a year (ie. 1991).");
+            int userYear = int.Parse(Console.ReadLine());
+            Console.WriteLine(userYear);
+        }
 
     }
 }
